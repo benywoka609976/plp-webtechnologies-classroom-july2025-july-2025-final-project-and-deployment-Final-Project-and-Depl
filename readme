@@ -1,0 +1,27 @@
+# TechCorp Solutions Website
+
+A modern, responsive multipage website built with HTML5, CSS3, and JavaScript.
+
+## Project Overview
+- Purpose: Technology consultancy company website
+- Type: Single-page application with multiple sections
+- Features: Responsive design, dark mode, animations, form validation
+
+## Technology Stack
+- HTML5 (semantic markup)
+- CSS3 (Grid, Flexbox, animations)
+- Vanilla JavaScript (ES6+)
+
+## Live Demo
+[View Live Site](your-deployment-url-here)
+
+## Features
+- 📱 Fully responsive design
+- 🌙 Dark/light theme toggle
+- ✨ Smooth animations and transitions
+- 📧 Contact form with validation
+- ♿ Accessibility compliant
+- 🚀 Performance optimized
+
+
+
