@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechCorp Solutions - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER & NAVIGATION -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#" class="logo" onclick="showPage('home')">TechCorp Solutions</a>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" data-page="home" onclick="showPage('home')">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-page="about" onclick="showPage('about')">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-page="services" onclick="showPage('services')">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-page="contact" onclick="showPage('contact')">Contact</a>
+                </li>
+            </ul>
+            <button class="hamburger" id="hamburger" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <!-- HOME PAGE -->
+        <section id="home" class="page-section active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Innovative Solutions for Tomorrow</h1>
+                    <p>We transform ideas into powerful digital experiences that drive your business forward</p>
+                    <a href="#" class="cta-button" onclick="showPage('contact')">Get Started</a>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="container">
+                    <h2 class="section-title">Why Choose TechCorp?</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🚀</div>
+                            <h3>Fast Performance</h3>
+                            <p>Lightning-fast solutions optimized for speed and efficiency, ensuring your business stays ahead of the competition.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🔒</div>
+                            <h3>Secure & Reliable</h3>
+                            <p>Enterprise-grade security measures and 99.9% uptime guarantee to protect your valuable data and operations.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">💡</div>
+                            <h3>Innovative Solutions</h3>
+                            <p>Cutting-edge technology and creative problem-solving approaches tailored to your unique business needs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT PAGE -->
+        <section id="about" class="page-section">
+            <div class="about-hero">
+                <div class="container">
+                    <h1>About TechCorp Solutions</h1>
+                    <p>Building the future, one solution at a time</p>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="container">
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <h2>Our Story</h2>
+                            <p>Founded in 2018, TechCorp Solutions has been at the forefront of digital transformation, helping businesses navigate the complex world of modern technology. Our team of experts combines years of experience with fresh perspectives to deliver solutions that truly make a difference.</p>
+                            <p class="mt-4">We believe that technology should serve people, not the other way around. That's why we focus on creating intuitive, user-friendly solutions that solve real problems and drive meaningful results.</p>
+                        </div>
+                        <div class="about-image">
+                            <p>Our Team in Action</p>
+                        </div>
+                    </div>
+
+                    <div class="about-grid">
+                        <div class="about-image">
+                            <p>Innovation Lab</p>
+                        </div>
+                        <div class="about-text">
+                            <h2>Our Mission</h2>
+                            <p>To empower businesses with innovative technology solutions that drive growth, efficiency, and success in the digital age. We're committed to excellence, integrity, and building lasting partnerships with our clients.</p>
+                            <p class="mt-4">Our values guide everything we do: customer-centricity, innovation, quality, and transparency. We measure our success by the success of our clients.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES PAGE -->
+        <section id="services" class="page-section">
+            <div class="about-hero">
+                <div class="container">
+                    <h1>Our Services</h1>
+                    <p>Comprehensive solutions for your business needs</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-header">
+                            <h3>Web Development</h3>
+                            <div class="price">$2,500+</div>
+                        </div>
+                        <div class="service-content">
+                            <p>Custom websites and web applications built with modern technologies. Responsive design, SEO optimization, and performance-focused development.</p>
+                            <ul class="mt-4">
+                                <li>• Responsive design</li>
+                                <li>• SEO optimization</li>
+                                <li>• Content management systems</li>
+                                <li>• E-commerce solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-header">
+                            <h3>Mobile Apps</h3>
+                            <div class="price">$5,000+</div>
+                        </div>
+                        <div class="service-content">
+                            <p>Native and cross-platform mobile applications for iOS and Android. User-friendly interfaces with robust backend integration.</p>
+                            <ul class="mt-4">
+                                <li>• iOS & Android development</li>
+                                <li>• Cross-platform solutions</li>
+                                <li>• App Store optimization</li>
+                                <li>• Maintenance & support</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-header">
+                            <h3>Digital Strategy</h3>
+                            <div class="price">$1,500+</div>
+                        </div>
+                        <div class="service-content">
+                            <p>Comprehensive digital transformation strategies to help your business thrive in the digital landscape.</p>
+                            <ul class="mt-4">
+                                <li>• Digital audits</li>
+                                <li>• Technology roadmaps</li>
+                                <li>• Process optimization</li>
+                                <li>• Training & support</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-header">
+                            <h3>Cloud Solutions</h3>
+                            <div class="price">$3,000+</div>
+                        </div>
+                        <div class="service-content">
+                            <p>Scalable cloud infrastructure and migration services to improve efficiency and reduce costs.</p>
+                            <ul class="mt-4">
+                                <li>• Cloud migration</li>
+                                <li>• Infrastructure setup</li>
+                                <li>• Security implementation</li>
+                                <li>• 24/7 monitoring</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT PAGE -->
+        <section id="contact" class="page-section">
+            <div class="about-hero">
+                <div class="container">
+                    <h1>Contact Us</h1>
+                    <p>Let's discuss your project</p>
+                </div>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h2 class="mb-4">Send us a message</h2>
+                    <div class="success-message" id="successMessage">
+                        Thank you! Your message has been sent successfully.
+                    </div>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h2 class="mb-4">Get in touch</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Address</h3>
+                            <p>123 Tech Street<br>Innovation District<br>San Francisco, CA 94105</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>hello@techcorp.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div>
+                            <h3>Business Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#" onclick="showPage('home')">Home</a>
+                <a href="#" onclick="showPage('about')">About</a>
+                <a href="#" onclick="showPage('services')">Services</a>
+                <a href="#" onclick="showPage('contact')">Contact</a>
+            </div>
+            <p>&copy; 2024 TechCorp Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
